@@ -6,8 +6,8 @@ variable "create_role" {
 
 variable "instance_profile_create" {
   description = "Controls instance profile creation"
-  type = bool
-  default = true
+  type        = bool
+  default     = true
 }
 
 variable "role_name" {

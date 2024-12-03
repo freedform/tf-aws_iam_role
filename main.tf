@@ -32,6 +32,6 @@ resource "aws_iam_role_policy_attachment" "managed_policies" {
 
 resource "aws_iam_instance_profile" "this" {
   count = var.create_role && var.instance_profile_create ? 1 : 0
-  name = var.role_name
-  role = aws_iam_role.this[0].name
+  name  = var.role_name
+  role  = aws_iam_role.this[0].name
 }
